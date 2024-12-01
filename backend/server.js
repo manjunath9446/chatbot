@@ -29,7 +29,7 @@ app.post("/chat", (req, res) => {
     res.json({ response: `You said: ${userMessage}` });
 });
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 4000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 
 const groq = new Groq({ apiKey: process.env.GROQ_API_KEY });
